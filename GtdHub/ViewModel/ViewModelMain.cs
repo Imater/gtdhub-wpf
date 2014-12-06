@@ -23,7 +23,10 @@ namespace GtdHubApp.ViewModel
                 Items = new ObservableCollection<Tree>
                 {
                     new Tree {Title = "child 1"},
-                    new Tree {Title = "child 2"},
+                    new Tree {Title = "child 2", Items = new ObservableCollection<Tree>
+                    {
+                        new Tree{ Title = "Subchild"}
+                    }},
                     new Tree {Title = "child 3"},
                     new Tree {Title = "child 4"},
                     new Tree {Title = "child 5"},
