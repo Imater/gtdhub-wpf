@@ -6,14 +6,12 @@ namespace GtdHubApp.ViewModel
 {
     public class ViewModelMain : ViewModelBase
     {
-        public ObservableCollection<Note> Notes { get; set; }
-        public ObservableCollection<Tree> Trees { get; set; }
         public ViewModelMain()
         {
             Notes = new ObservableCollection<Note>
             {
-                new Note{Title = "Notebook for Home", Id = Guid.NewGuid()},
-                new Note{Title = "Notebook for Work", Id = Guid.NewGuid()}
+                new Note {Title = "Notebook for Home", Id = Guid.NewGuid()},
+                new Note {Title = "Notebook for Work", Id = Guid.NewGuid()}
             };
 
             var tree1 = new Tree
@@ -23,10 +21,14 @@ namespace GtdHubApp.ViewModel
                 Items = new ObservableCollection<Tree>
                 {
                     new Tree {Title = "child 1"},
-                    new Tree {Title = "child 2", Items = new ObservableCollection<Tree>
+                    new Tree
                     {
-                        new Tree{ Title = "Subchild"}
-                    }},
+                        Title = "child 2",
+                        Items = new ObservableCollection<Tree>
+                        {
+                            new Tree {Title = "Subchild"}
+                        }
+                    },
                     new Tree {Title = "child 3"},
                     new Tree {Title = "child 4"},
                     new Tree {Title = "child 5"},
@@ -36,10 +38,12 @@ namespace GtdHubApp.ViewModel
             };
             Trees = new ObservableCollection<Tree>
             {
-                new Tree{Title = "Tree for Home", Id = Guid.NewGuid()},
+                new Tree {Title = "Tree for Home", Id = Guid.NewGuid()},
                 tree1
             };
         }
 
+        public ObservableCollection<Note> Notes { get; set; }
+        public ObservableCollection<Tree> Trees { get; set; }
     }
 }
