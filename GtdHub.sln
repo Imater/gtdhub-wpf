@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdHubApp", "GtdHub\GtdHubA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdHub.Domain.Model", "GtdHub.Domain.Model\GtdHub.Domain.Model.csproj", "{EEA6F299-4AEF-47BF-8571-2F9A0B71AB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdHub.Domain.Tests", "GtdHub.Domain.Tests\GtdHub.Domain.Tests\GtdHub.Domain.Tests.csproj", "{88645CB3-52E9-4D46-B3EF-1297DBA2EFA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtdHub.Domain.Tests", "GtdHub.Domain.Tests\GtdHub.Domain.Tests.csproj", "{88645CB3-52E9-4D46-B3EF-1297DBA2EFA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
